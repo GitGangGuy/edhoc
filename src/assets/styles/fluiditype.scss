@@ -1,0 +1,159 @@
+/*
+This file has been largely copied from the css file belonging to the Fluiditype project (https://github.com/Fluiditype/fluiditype/).
+It is licensed under the MIT-License, which is GPL-compatible.
+
+MIT License
+
+Copyright (c) 2020 Boris Kirov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+$fontSize: calc(12px + 0.698vw);
+$lineHeight: calc(#{$fontSize} * 1.4);
+$letterSpacing: calc(#{$fontSize} * 0.0015);
+$fontWeight: 300;
+
+p,
+li,
+b,
+i,
+strong,
+a,
+mark {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	letter-spacing: $letterSpacing;
+	font-feature-settings: normal;
+	font-family: 'Inter', sans-serif;
+}
+
+p,
+li,
+mark,
+a,
+blockquote {
+	font-weight: calc(#{$fontWeight} * 1.33);
+}
+
+code {
+	font-size: calc(#{$fontSize} * 1.1);
+	line-height: $lineHeight;
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 1.33);
+	color: #eb5757;
+	font-family: 'Inter', sans-serif;
+}
+
+mark {
+	background: #b3d7ff;
+	padding: 0.05vw 0.4vw;
+	border-radius: 2px;
+	color: #545454;
+	font-size: calc(#{$fontSize} * 1.1);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 1.33);
+	word-break: break-word;
+	font-family: 'Inter', sans-serif;
+}
+
+blockquote {
+	background-color: #f7f7f7;
+	font-size: calc(#{$fontSize} * 1.1);
+	letter-spacing: $letterSpacing;
+	border-left: 4px solid #545454;
+	border-radius: 2px;
+	padding: 2.5vw;
+	margin: 2%;
+	font-style: italic;
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	color: #545454;
+	text-decoration-skip-ink: none;
+	font-family: 'Inter', sans-serif;
+}
+
+a:focus {
+	outline: 1px dashed #0004b3;
+}
+
+a:hover {
+	color: #0004b3;
+}
+
+pre {
+	background-color: #282c35;
+	color: #abb2bf;
+	display: block;
+	margin: 0 0 1.5625em;
+	border-radius: 4px;
+	overflow: auto;
+	padding: 2.5vw;
+	tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	white-space: pre-wrap;
+	word-break: break-all;
+	font-size: calc(#{$fontSize} * 1.1);
+	letter-spacing: $letterSpacing;
+	font-family: 'Inter', sans-serif;
+}
+
+h1 {
+	font-size: calc(#{$fontSize} * 3);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 2.66);
+	font-family: 'Inter', sans-serif;
+}
+
+h2 {
+	font-size: calc(#{$fontSize} * 2);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 2.33);
+	font-family: 'Inter', sans-serif;
+}
+
+h3 {
+	font-size: calc(#{$fontSize} * 1.75);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 2);
+	font-family: 'Inter', sans-serif;
+}
+
+h4 {
+	font-size: calc(#{$fontSize} * 1.5);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 1.667);
+	font-family: 'Inter', sans-serif;
+}
+
+h5 {
+	font-size: calc(#{$fontSize} * 1.25);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 1.5);
+	font-family: 'Inter', sans-serif;
+}
+
+h6 {
+	font-size: calc(#{$fontSize} * 1);
+	letter-spacing: $letterSpacing;
+	font-weight: calc(#{$fontWeight} * 1);
+	font-family: 'Inter', sans-serif;
+}

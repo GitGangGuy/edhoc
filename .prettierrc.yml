@@ -1,0 +1,10 @@
+tabWidth: 4
+useTabs: true
+singleQuote: true
+quoteProps: 'consistent'
+trailingComma: 'es5'
+printWidth: 100
+svelteStrictMode: true
+svelteSortOrder: scripts-styles-markup
+svelteAllowShorthand: true
+svelteBracketNewLine: false
