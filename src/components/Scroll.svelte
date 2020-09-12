@@ -8,10 +8,11 @@
 		left: 50%;
 		bottom: 20%;
 		padding-top: 60px;
-		transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1);
+		transition: opacity 2s cubic-bezier(0.16, 1, 0.3, 1);
 		transform: translate(-50%, 50%);
+		color: #2d3748;
 		&:hover {
-			opacity: 0.7;
+			opacity: 0.6;
 		}
 		> span {
 			position: absolute;

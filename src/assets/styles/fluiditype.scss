@@ -85,17 +85,17 @@ blockquote {
 }
 
 a {
-	color: #545454;
 	text-decoration-skip-ink: none;
 	font-family: 'Inter', sans-serif;
-}
-
-a:focus {
-	outline: 1px dashed #0004b3;
-}
-
-a:hover {
-	color: #0004b3;
+	&:not(.noa) {
+		color: #545454;
+		&:focus {
+			outline: 1px dashed #0004b3;
+		}
+		&:hover {
+			color: #0004b3;
+		}
+	}
 }
 
 pre {
