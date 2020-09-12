@@ -38,7 +38,7 @@ const postcssConfig = (dev) => ({
 		!dev && autoprefixer,
 		!dev &&
 			cssnano({
-				preset: 'standard',
+				preset: 'default',
 			}),
 		postcssFailOnWarn,
 	].filter(Boolean),
